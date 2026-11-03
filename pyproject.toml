@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driftstar"
+version = "0.1.0"
+description = "An animated starfield for your terminal, with a slow aurora breathing across the top"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Krrish", email = "codewithkrrish7@gmail.com" }]
+dependencies = []
+
+[project.scripts]
+driftstar = "driftstar.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/codewithkrrish/driftstar"
+
+[tool.setuptools.packages.find]
+include = ["driftstar*"]
